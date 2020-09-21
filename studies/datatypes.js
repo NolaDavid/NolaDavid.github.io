@@ -5,8 +5,7 @@
 * 
 * 1. There are two sub-groups of Datatypes: Primitive and Complex datatypes.
 * 
-*
-* 2. Examples of Primitive datatypes: String, number, boolean, and undefined, null
+* 2. Examples of Primitive datatypes: String, number, boolean, and undefined,and null
 * Primitive values are passed into functions BY COPY- which means if reassigned inside a function, the original reference remains the same.
 *
 * 3. Examples of Complex datatypes: Arrays, objects
@@ -14,13 +13,6 @@
 *
 * 4. The difference between Primitive and Complex datatypes are that complex datatypes can hold more than one type of data.
 * Where as Primitive datatypes hold only one particular value of data.
-*
-*
-*
-*
-*
-*
-*
 *
 */
 
@@ -35,14 +27,14 @@ var stringTwo = "this is also a string";
 var stringThree = `this is a string literal`;
 
 // 3. Boolean: used to represent only two values true or false.
-// oolean values are helpful when comparing two things.
-console.log( 5 === '5'); //Example of comparing two values and expecting a result of yes or no , true or false.
+// Boolean values are helpful when comparing two things.
+if( 10 > 5); //Example of comparing two values and expecting a result of yes or no , true or false.
 
-// 4. Array: can be thought of as a list.
+// 4. Array: can be thought of as an ordered list starting at 0 instead of 1.
 /* Arrays in Javascript are wrapped in [], and start with an index of 0 instead of 1.
 They can also hold different types of values, whether its a mixture of true/ false, numbers, or string values.
 */
-let myArray = [1,"string", true, undefined];
+let myArray = [45,"string", true, undefined];
 
 // 5. Object: are a collection of key/value pairs and are created with { };
 /* Objects can store different data types as values but their keys are always strings.
@@ -50,7 +42,7 @@ let myArray = [1,"string", true, undefined];
 */
 const myObject = {name: "David", sleeping: false}
 let davidsName = myObject.name;   // example of accessing the key "name" to get the value by using dot notation
-let sleeping = myObject["sleeping"] // example of accessing the key in side myObject using bracket notation, which the key will always be in quotes
+let sleeping = myObject["sleeping"] // example of accessing the key in side myObject using bracket notation, which the key will always be a string
 
 // 6. Function: Can be thought of as a super hero's special ability.
 /* Functions are created with 4 parts; The keyword 'function' followed by the name you would like to assign it,(), and then {}.
@@ -73,7 +65,7 @@ var noMeaning; // This is an example of a variable thats been declared but is no
 
 // 9. NaN: Known as Not a number. NaN has a scope of global
 /*
-* An example of would be an mathmatic equation resulting in NaN
+* An example of NaN would be a mathematic equation resulting in NaN
 * Math.sqrt(-1) or var sum = 99 / "c"
 *or
 */
@@ -85,7 +77,7 @@ var noMeaning; // This is an example of a variable thats been declared but is no
 *
 *Negative infinity or -infinity is a global variable used to represent the lowest possible number.
 *When divided into itself or positive infinty the result is NaN
-*Negtative infinity divided by any positive other than positive infinity number results in -infinity
+*Negative infinity divided by any positive other than positive infinity number results in -infinity
 * When multiplied by itself the result is positive infinity
 * Syntax - Number.NEGATIVE_INFNITY
 */

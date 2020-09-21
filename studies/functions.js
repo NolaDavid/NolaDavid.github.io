@@ -20,9 +20,9 @@ function add(x,y){
 var subtract = function(x,y){
     return x - y;
 }
-//Functions can OPTIONALLY take inputs, and OPTIONALLY return a single value.  We  canspecify inputs,by creating a function that accepts parameters.
+//Functions can OPTIONALLY take inputs, and OPTIONALLY return a single value.  We  can specify inputs,by creating a function that accepts parameters.
 
-// We can specify outputs in a function witin the body of the function and in the return statement.
+// We can specify outputs in a function within the body of the function and in the return statement.
 
 /* A functions have access to any variable created inside itself or if a function is inside another function it has access to  variables in its 
 * parent function. Any variable created inside a function is not accessible outside of that function.

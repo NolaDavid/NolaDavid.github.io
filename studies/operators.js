@@ -30,7 +30,7 @@
 // Using the -- operator or the decrement operator  will decrease its operand by 1.
 * var n = 10; // Here we create a variable equal to 10;
 * n--; // Then we decrement the variable we created by 1 resulting in n being equal to 9; Also used in loops
-// ** is the exponentiation operator which returns the base  to the exponential power.
+// ** is the exponential operator which returns the base  to the exponential power.
 * var titan = 5 ** 3; // this results in titan being equal to 125; It would be the equivalent to 5 * 5 * 5;
 /*
 *   Comparison operators:
@@ -69,7 +69,7 @@
 /*   Unary operators (!, typeOf, -)
 * Are operators with only 1 operand
 */
-typeof 6 // this is an example of or an urnary operation because it performs an action  and only has one side of data to evaluate
+typeof 6 // this is an example of an urnary operation because it performs an action  and only has one side of data to evaluate
 *
 *
 /*   Ternary operator (a ? b : c)

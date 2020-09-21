@@ -1,6 +1,6 @@
 /* Control-Flow:
 * Is the order in which code is executed.
-* Uses conditional statements, loops, and if statements to make decisions.
+* Uses conditional statements, loops, and function to make decisions and control the flow of the application.
 */
 var weather = 'sunny';
 if(weather === 'sunny'){
