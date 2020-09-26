@@ -4,13 +4,13 @@
 * 
 */
 // Strings can be concatenated or joined together with a '+' operator
-* var stringOne = "Hello";
-* var stringTwo = 'World';
-* var stringThree = stringOne + " " + stringTwo; 
+ var stringOne = "Hello";
+ var stringTwo = 'World';
+ var stringThree = stringOne + " " + stringTwo; 
 // This results in "Hello World" due to usage of the addition operator.
-*
+
 /* Strings can also be manipulated using string methods.
 String methods are built in Javascript function specifically designed to manipulate strings.
 */
-* stringOne.toUpperCase() // This method takes a string and returns it with all capitalized letters.
-* stringTwo.toLowerCase() // This method takes a string and returns it will all the letters lowercase.
+ stringOne.toUpperCase() // This method takes a string and returns it with all capitalized letters.
+ stringTwo.toLowerCase() // This method takes a string and returns it will all the letters lowercase.

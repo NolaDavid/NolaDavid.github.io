@@ -13,9 +13,9 @@
 */
 
 // 1. declaration //
-var myName; //used in es5
+var myName = "jim"; //used in es5
 let secondExample; // used in es6
-const thirdExample; // used in es6
+const thirdExample = {}; // used in es6
 
 /*
 * At the declaration phase, the variable myName is undefined because we have NOT initialized
@@ -50,7 +50,7 @@ const myWord = "frog";
 
 //example of a variable declared with they keyword 'var' being hoisted
 console.log(hoistedVariable)
-var hoistedVariable = 'this works'
+var hoistedVariable = 'this works';
 /* Javascript reads the code line by line from top to bottom, but makes two passes. During the first pass the variable 'hoisted variable',
 * is hoisted to the top of the environment, which puts it above the console.log call and it enables this to be working code.
-*The same can NOT be done with variables declared with 'const' and 'let'. You must declare the variable before trying to do anything with it.
+*The same can NOT be done with variables declared with 'const' and 'let'. You must declare the variable before trying to do anything with it.*/

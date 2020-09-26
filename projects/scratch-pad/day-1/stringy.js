@@ -80,6 +80,9 @@ return newStr;
  */
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
+    
+    //return the result of the first letter in the string given compared to the character given. 
+    //incase either invole a capitalize letter make both string and char lowercase before comparing
   return string[0].toLowerCase() === char.toLowerCase();
     // YOUR CODE ABOVE HERE //
 }
@@ -98,7 +101,9 @@ function beginsWith(string, char) {
  */
 function endsWith(string, char) {
     // YOUR CODE BELOW HERE //
+    //create a new string that is equal to the given string in reverse
 let ending = string.split("").reverse().join(" ");
+//Now we can compare the first letter of the string to the char given
 return ending[0].toLowerCase() === char.toLowerCase();
 
     // YOUR CODE ABOVE HERE //
@@ -129,8 +134,9 @@ return stringOne.concat(stringTwo);
  */
 function join(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
+    //create an array containting both arguments
     var args = Array.from(arguments);
-
+// use the .join method to turn the array until a string.
 return args.join("")
     // YOUR CODE ABOVE HERE //
 }
@@ -148,12 +154,12 @@ function longest(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
     
     //compare two strings and return the string that is the longest
-if(stringOne.length > stringTwo.length){
-    return stringOne;
-} else {
-    return stringTwo;
-}
-
+// if(stringOne.length > stringTwo.length){
+//     return stringOne;
+// } else {
+//     return stringTwo;
+// }
+return stringOne.length > stringTwo.length ? stringOne: stringTwo
 
     // YOUR CODE ABOVE HERE //
 }

@@ -21,8 +21,12 @@
 
 function reverseString(input) {
     // YOUR CODE GOES BELOW HERE //
+    
+    //create a empty string to collect output to return
   let stringTwo = "";
+  //loop through the input and set the new string equal to itself plus the next iteration
   for(var i = input.length - 1; i >= 0; i--){
+    //new string equals itself plus the current iteration
     stringTwo += input[i]
   }
     
