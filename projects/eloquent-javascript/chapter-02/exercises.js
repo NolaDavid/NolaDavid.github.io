@@ -3,12 +3,9 @@
 // triangles ///////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function triangles() {
-var x ='';
-for(let i=0; i <= 10 ; i++){
-x += '#';
-"/n"
-console.log(x);
+function triangles(x) {
+for(let triangle = '#'; triangle.length <= x ; triangle += "#"){
+	console.log(triangle)
 }
 }
 ////////////////////////////////////////////////////////////////////////////////
@@ -35,10 +32,32 @@ function fizzBuzz(){
 // drawChessboard //////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function drawChessboard() {
-
+function drawChessboard(input) {
+//create a variable that holds the desired board size;
+let size = input;
+//create a variable to a either "#" or a " ";
+let drawBoard = "";
+//create a loop to represent the board vertically
+for (let i = 0; i < size; i++) {
+	//create a loop to represent the board horizontally
+  for (let j = 0; j < size; j++) {
+  // if the current iteration is even add a space to the drawBoard variable
+  //if the current iteration is odd add a "#"
+    if ((i + j) % 2 == 0) {
+      drawBoard += " ";
+    } else {
+      drawBoard += "#";
+    }
+  }
+  //create a new line after each iteration
+  drawBoard += "\n";
 }
 
+console.log(drawBoard);
+
+
+
+}
 ////////////////////////////////////////////////////////////////////////////////
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
