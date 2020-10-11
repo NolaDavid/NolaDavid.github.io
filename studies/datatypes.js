@@ -12,9 +12,24 @@
 * Complex datatypes are passed into function BY REFERENCE, if reassigned in the function it will change the referencing value.
 *
 * 4. The difference between Primitive and Complex datatypes are that complex datatypes can hold more than one type of data.
-* Where as Primitive datatypes hold only one particular value of data.
+* Where as Primitive datatypes hold only one particular value of data. Also primitive datatype are copy by value and complex datatypes are copy by reference;
+*The difference between copy by value and copy by reference is that when you assign two variables to a complex data type they are pointing to the exact object and any changes will affect both variables,
+* but with primitive datatypes they are copy by value.
 *
 */
+
+//Copy by Reference vs Value
+let a = 99;
+let b = a;
+a = 25;
+//In the example above "a' is set to equal 99 and then 'b' is equal to 'a' which would be 99. After reassigning "a", 'b' is still equal to 99 .
+let person = {name: "David", age: 32};
+let samePerson = person;
+samePerson.age = 40;
+/*In the above example where a person object is created and then a new variable is set to equal the same object.
+* Any changes made to either object will result in both variables changing, this is a result of copy by reference;
+*/
+
 
 // 1.Numbers: hold a numeric value
 var myAge = 32; //example of a variable holding a numeric value;
@@ -35,6 +50,10 @@ if( 10 > 5); //Example of comparing two values and expecting a result of yes or 
 They can also hold different types of values, whether its a mixture of true/ false, numbers, or string values.
 */
 let myArray = [45,"string", true, undefined];
+
+//To access an element in an array, type the name of the array followed by the index the element is in surrounded in brackets;
+let someAge = myArray[0];
+//In the example above,  I am accessing the first element in  myArray using bracket notation to access the number 45 and setting that value to a variable;
 
 // 5. Object: are a collection of key/value pairs and are created with { };
 /* Objects can store different data types as values but their keys are always strings.

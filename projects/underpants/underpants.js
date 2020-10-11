@@ -371,7 +371,7 @@ _.map = function(collection,func){
 */
 _.pluck = function(collection, key) {
     //go through array and for each object in the array run a test and return that key value 
-    return _.map(collection, function(obj) {
+    return collection.map(function(obj) {
         //return the value of the key
         return obj[key];
     });
